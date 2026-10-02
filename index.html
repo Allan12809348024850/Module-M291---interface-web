@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allan Sonzaï Heberling — Présentation</title>
+  <style>
+    :root {
+      --fond: #f6f4ef;
+      --texte: #1c1c1c;
+      --accent: #ff6a13;
+      --accent-texte: #1c1c1c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: var(--fond);
+      color: var(--texte);
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px; }
+    h1 { font-size: clamp(2rem, 8vw, 3.2rem); line-height: 1.1; margin: 0 0 12px; }
+    h2 { font-size: 1.4rem; margin: 0 0 12px; }
+    .intro { font-size: 1.2rem; margin: 0; }
+    header, section { margin-bottom: 40px; }
+    ul { padding-left: 20px; margin: 0; }
+    li { margin-bottom: 8px; }
+    .bouton {
+      display: inline-block;
+      min-height: 48px;
+      padding: 12px 20px;
+      background: var(--accent);
+      color: var(--accent-texte);
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .bouton:hover { background: #e55a08; }
+    .bouton:focus-visible { outline: 3px solid var(--texte); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Allan Sonzaï Heberling</h1>
+      <p class="intro">Apprenti médiamaticien au CPNV, en Suisse romande. Bienvenue sur ma page de présentation.</p>
+    </header>
+
+    <section>
+      <h2>Mes compétences et envies</h2>
+      <ul>
+        <li>Développement web</li>
+        <li>Design graphique</li>
+        <li>Gestion de projet</li>
+        <li>Communication digitale</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Mon projet M291</h2>
+      <p>Lêkê Sneakers : un site vitrine pour trouver une paire de sneakers selon sa pointure et son budget.</p>
+    </section>
+
+    <section>
+      <h2>Mon GitHub</h2>
+      <p>Tu peux découvrir mes projets sur mon GitHub.</p>
+      <a class="bouton" href="https://github.com/Allan12809348024850" target="_blank" rel="noopener">Voir mon GitHub</a>
+    </section>
+  </main>
+</body>
+</html>
