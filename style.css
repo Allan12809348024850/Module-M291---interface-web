@@ -1,0 +1,239 @@
+/* Design tokens — Lêkê Sneakers (Piste C retenue, voir design/critique.md) */
+:root {
+  /* Palette 60-30-10 : fond clair 60 %, noir 30 %, orange 10 % */
+  --color-bg: #f6f4ef;
+  --color-surface: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-primary: #ff6a13;       /* toujours avec du texte noir (5,9:1) */
+  --color-primary-hover: #e55a08;
+  --color-photo: #ebe8e1;
+  --color-error: #b3261e;
+
+  /* Échelle typographique */
+  --font-sans: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+
+  /* Espacements sur une base de 8 px */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+
+  --radius-card: 12px;
+  --border: 2px solid var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.5;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.icone {
+  width: 20px;
+  height: 20px;
+}
+
+/* En-tête */
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background-color: var(--color-text);
+  color: var(--color-surface);
+}
+
+.logo {
+  color: var(--color-surface);
+  font-size: var(--text-base);
+  font-weight: 900;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.logo-point {
+  color: var(--color-primary);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.nav-lien {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 48px;
+  padding: 0 var(--space-2);
+  color: var(--color-surface);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-lien.actif {
+  box-shadow: inset 0 -3px 0 var(--color-primary);
+}
+
+/* Contenu */
+.contenu {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-3);
+}
+
+.accroche h1 {
+  font-size: var(--text-xl);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.accroche-texte {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+}
+
+.compteur {
+  margin: var(--space-4) 0 var(--space-2);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: var(--text-sm);
+}
+
+/* Grille de cartes, mobile first */
+.cartes-grille {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.carte {
+  background: var(--color-surface);
+  border: var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.carte-photo {
+  display: grid;
+  place-items: center;
+  height: 160px;
+  background: var(--color-photo);
+  border-bottom: var(--border);
+  color: var(--color-text);
+}
+
+.carte-photo svg {
+  width: 60%;
+  height: 100%;
+}
+
+.carte-photo--accent {
+  color: var(--color-primary);
+}
+
+.carte-photo--sombre {
+  background: var(--color-text);
+  color: var(--color-surface);
+}
+
+.carte-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+}
+
+.carte-marque {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.carte-modele {
+  font-size: var(--text-lg);
+  font-weight: 800;
+}
+
+.carte-prix {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+/* Encart favoris */
+.encart {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: var(--border);
+  border-radius: var(--radius-card);
+}
+
+.encart h2 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+}
+
+.encart p {
+  color: var(--color-text-muted);
+}
+
+/* Pied de page */
+.pied {
+  padding: var(--space-4) var(--space-3);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.pied a {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+/* Bureau : dès 768 px */
+@media (min-width: 768px) {
+  .entete {
+    padding: var(--space-3) var(--space-5);
+  }
+
+  .logo {
+    font-size: var(--text-lg);
+  }
+
+  .accroche h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .cartes-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

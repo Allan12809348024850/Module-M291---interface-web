@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lêkê Sneakers — Ta pointure, ton budget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Icône sneaker réutilisée par chaque carte -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icone-sneaker" viewBox="0 0 200 100">
+      <path d="M20 70 C 20 50, 40 45, 60 40 L 90 22 C 98 18, 106 22, 110 30 L 120 46 C 140 50, 170 55, 182 66 C 188 72, 186 80, 178 80 L 26 80 C 20 80, 18 76, 20 70 Z" fill="currentColor"/>
+      <rect x="18" y="80" width="170" height="8" rx="4" fill="currentColor" opacity=".55"/>
+    </symbol>
+    <symbol id="icone-coeur" viewBox="0 0 24 24">
+      <path d="M12 20s-7-4.4-9.3-8.6C1.2 8.6 2.8 5 6.3 5c2 0 3.2 1.1 3.9 2.2.7-1.1 1.9-2.2 3.9-2.2 3.5 0 5.1 3.6 3.6 6.4C19 15.6 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="entete">
+    <a href="index.html" class="logo">Lêkê Sneakers<span class="logo-point">.</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#catalogue" class="nav-lien actif">Catalogue</a>
+      <a href="#favoris" class="nav-lien">
+        <svg class="icone" aria-hidden="true"><use href="#icone-coeur"/></svg>
+        Favoris
+      </a>
+    </nav>
+  </header>
+
+  <main class="contenu">
+    <section class="accroche">
+      <h1>Ta pointure. Ton budget. Ta paire.</h1>
+      <p class="accroche-texte">12 sneakers à moins de 160 CHF, sans compte à créer.</p>
+      <!-- La recherche et les filtres pointure / prix viendront en semaine 12 -->
+    </section>
+
+    <p class="compteur" id="catalogue">12 paires</p>
+
+    <section class="cartes-grille" aria-label="Catalogue des sneakers">
+      <article class="carte">
+        <div class="carte-photo">
+          <svg aria-hidden="true"><use href="#icone-sneaker"/></svg>
+        </div>
+        <div class="carte-infos">
+          <div>
+            <p class="carte-marque">Kova</p>
+            <h2 class="carte-modele">Runner Lac 2</h2>
+          </div>
+          <p class="carte-prix">129 CHF</p>
+        </div>
+      </article>
+
+      <article class="carte">
+        <div class="carte-photo carte-photo--accent">
+          <svg aria-hidden="true"><use href="#icone-sneaker"/></svg>
+        </div>
+        <div class="carte-infos">
+          <div>
+            <p class="carte-marque">Alpa</p>
+            <h2 class="carte-modele">Court Classic</h2>
+          </div>
+          <p class="carte-prix">95 CHF</p>
+        </div>
+      </article>
+
+      <article class="carte">
+        <div class="carte-photo carte-photo--sombre">
+          <svg aria-hidden="true"><use href="#icone-sneaker"/></svg>
+        </div>
+        <div class="carte-infos">
+          <div>
+            <p class="carte-marque">Nordo</p>
+            <h2 class="carte-modele">Street Mid</h2>
+          </div>
+          <p class="carte-prix">149 CHF</p>
+        </div>
+      </article>
+
+      <article class="carte">
+        <div class="carte-photo">
+          <svg aria-hidden="true"><use href="#icone-sneaker"/></svg>
+        </div>
+        <div class="carte-infos">
+          <div>
+            <p class="carte-marque">Kova</p>
+            <h2 class="carte-modele">Trail Jura</h2>
+          </div>
+          <p class="carte-prix">139 CHF</p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="encart" id="favoris">
+      <h2>Tes favoris</h2>
+      <p>Aucune paire pour l'instant. Les favoris arrivent dans un prochain sprint.</p>
+    </aside>
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 — Allan · Projet ICT 291 · <a href="presentation.html">Qui suis-je ?</a></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
