@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Piste C — Moderne</title><style>*{box-sizing:border-box;margin:0;padding:0}body{width:390px;min-height:844px;line-height:1.4}button,input{font:inherit;color:inherit}.haut{display:flex;justify-content:space-between;align-items:center;padding:16px}.ico,.fav{width:48px;height:48px;display:grid;place-items:center;font-size:20px;cursor:pointer}main{padding:0 16px 16px}.recherche{display:flex;align-items:center;gap:8px;height:48px;padding:0 14px;margin-top:12px}.recherche input{border:0;background:none;flex:1;outline:none;font-size:15px}.puces{display:flex;gap:8px;margin-top:12px}.puce,.filtrer{min-height:48px;padding:0 16px;cursor:pointer}.filtrer{margin-left:auto}.compteur{margin:16px 0 8px;font-size:14px}.carte{margin-bottom:16px;overflow:hidden}.photo{height:150px;display:grid;place-items:center}.photo svg{width:62%}.infos{display:flex;align-items:center;gap:12px;padding:12px 14px}.infos>div{flex:1}.marque{font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+:root{--fond:#f6f4ef;--texte:#1c1c1c;--accent:#ff6a13;--gris:#5a5a5a;--carte:#fff}
+body{background:var(--fond);color:var(--texte);font-family:"Segoe UI",system-ui,Arial,sans-serif}
+.haut{background:var(--texte);color:#fff}.logo{font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}
+.logo::after{content:".";color:var(--accent)}.ico{border:2px solid #fff;background:none;border-radius:8px;color:#fff}
+.accroche{font-size:26px;font-weight:900;line-height:1.1;margin-top:16px;text-transform:uppercase}
+.recherche{background:var(--carte);border:2px solid var(--texte);border-radius:8px}.puce{background:var(--carte);border:2px solid var(--texte);border-radius:8px;font-weight:700}
+.filtrer{background:var(--accent);color:var(--texte);border:2px solid var(--texte);border-radius:8px;font-weight:900}
+.compteur{color:var(--gris);font-weight:600}.carte{background:var(--carte);border:2px solid var(--texte);border-radius:8px}
+.photo{background:#ebe8e1;color:var(--texte);border-bottom:2px solid var(--texte)}.c2 svg{color:var(--accent)}.c3{background:var(--texte);color:#fff}
+.marque{color:var(--gris);font-weight:700}h2{font-size:18px;font-weight:800}.prix{font-size:22px;font-weight:900}
+.fav{border:2px solid var(--texte);background:none;border-radius:8px}</style></head><body>
+<header class="haut"><p class="logo">Lêkê Sneakers</p><button class="ico" aria-label="Favoris">♡</button></header>
+<main>
+<p class="accroche">Ta pointure. Ton budget. Ta paire.</p>
+<label class="recherche"><span>⌕</span><input placeholder="Rechercher un modèle, une marque…"></label>
+<div class="puces"><button class="puce">Pointure ▾</button><button class="puce">Prix max ▾</button><button class="filtrer">Filtrer</button></div>
+<p class="compteur">12 paires</p>
+<article class="carte"><div class="photo c1"><svg viewBox="0 0 200 100" aria-hidden="true"><path d="M20 70 C 20 50, 40 45, 60 40 L 90 22 C 98 18, 106 22, 110 30 L 120 46 C 140 50, 170 55, 182 66 C 188 72, 186 80, 178 80 L 26 80 C 20 80, 18 76, 20 70 Z" fill="currentColor"/><rect x="18" y="80" width="170" height="8" rx="4" fill="currentColor" opacity=".55"/></svg></div><div class="infos"><div><p class="marque">Kova</p><h2>Runner Lac 2</h2></div><p class="prix">129 CHF</p><button class="fav" aria-label="Ajouter aux favoris">♡</button></div></article>
+<article class="carte"><div class="photo c2"><svg viewBox="0 0 200 100" aria-hidden="true"><path d="M20 70 C 20 50, 40 45, 60 40 L 90 22 C 98 18, 106 22, 110 30 L 120 46 C 140 50, 170 55, 182 66 C 188 72, 186 80, 178 80 L 26 80 C 20 80, 18 76, 20 70 Z" fill="currentColor"/><rect x="18" y="80" width="170" height="8" rx="4" fill="currentColor" opacity=".55"/></svg></div><div class="infos"><div><p class="marque">Alpa</p><h2>Court Classic</h2></div><p class="prix">95 CHF</p><button class="fav" aria-label="Ajouter aux favoris">♡</button></div></article>
+<article class="carte"><div class="photo c3"><svg viewBox="0 0 200 100" aria-hidden="true"><path d="M20 70 C 20 50, 40 45, 60 40 L 90 22 C 98 18, 106 22, 110 30 L 120 46 C 140 50, 170 55, 182 66 C 188 72, 186 80, 178 80 L 26 80 C 20 80, 18 76, 20 70 Z" fill="currentColor"/><rect x="18" y="80" width="170" height="8" rx="4" fill="currentColor" opacity=".55"/></svg></div><div class="infos"><div><p class="marque">Nordo</p><h2>Street Mid</h2></div><p class="prix">149 CHF</p><button class="fav" aria-label="Ajouter aux favoris">♡</button></div></article>
+</main>
+</body></html>
