@@ -6,7 +6,7 @@ Projet du module ICT 291 (Développer des interfaces utilisateurs), réalisé au
 
 Lêkê Sneakers est un site vitrine pour trouver rapidement une paire de sneakers selon sa pointure et son budget. Il s’adresse aux jeunes en Suisse romande, sur smartphone, sans compte à créer et sans paiement.
 
-Le dossier design (Note 1) est en place : pitch, persona, user flow, brief, wireframes, 3 directions graphiques, critique et protocole de tests. L’écran d’accueil est codé en HTML/CSS (s9) ; les données JSON, la recherche et les favoris arrivent dans les prochaines semaines.
+Le dossier design (Note 1) est en place : pitch, persona, user flow, brief, wireframes, 3 directions graphiques, critique et protocole de tests. L’écran d’accueil est codé en HTML/CSS (s9) et la base de données `data.json` (32 paires) est prête (s10) ; le chargement avec `fetch`, la recherche et les favoris arrivent dans les prochaines semaines.
 
 ## Objectifs
 
@@ -33,6 +33,11 @@ Aucun framework : pas de Bootstrap, pas de React.
 ├── index.html              Écran d’accueil de l’app (s9)
 ├── style.css               Design tokens + mise en page mobile first
 ├── js/app.js               Vide pour l’instant (fetch en s11)
+├── data.json               Catalogue : 32 paires typées (e3-2)
+├── data/
+│   ├── schema.json         Schéma de validation JSON Schema (s10-av1)
+│   ├── data-avance.json    Magasins avec GPS et horaires (s10-av2)
+│   └── README.md           Description des champs
 ├── presentation.html       Ma page de présentation
 ├── brief.md                Brief client du projet
 ├── kit-ia.md               Mes outils IA
@@ -64,3 +69,4 @@ Ouvre ensuite le dossier dans VS Code. Il n’y a rien à installer : le site se
 | 30.10.2026 | Claude | « Voici mon brief et mon wireframe : génère 3 directions artistiques (éditoriale, chaleureuse, moderne) en HTML5 sémantique et CSS avec variables, sans framework. » | _à compléter_ |
 | 30.10.2026 | Claude | « Calcule les ratios de contraste WCAG de ma palette et dis-moi quelles combinaisons sont interdites. » | _à compléter_ |
 | 30.10.2026 | Claude | « Intègre l’écran d’accueil de la piste C en mobile first avec une media query à 768 px. » | _à compléter_ |
+| 06.11.2026 | Claude | « Crée data.json avec au moins 30 sneakers typées, puis le schéma de validation et l’échantillon avec GPS et horaires des ateliers avancés. » | _à compléter_ |
