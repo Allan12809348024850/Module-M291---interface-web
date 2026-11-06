@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "marque": "Kova",
+    "modele": "Runner Lac 2",
+    "prix": 129.00,
+    "enStock": true,
+    "pointures": [38, 39, 40, 41, 42, 43, 44],
+    "magasin": {
+      "nom": "Lêkê Flon",
+      "adresse": "Place de l'Europe 4",
+      "ville": "Lausanne",
+      "coordonnees": { "lat": 46.5205, "lng": 6.6295 },
+      "horaires": {
+        "lundi": [],
+        "mardi": [{ "ouverture": "10:00", "fermeture": "18:30" }],
+        "mercredi": [{ "ouverture": "10:00", "fermeture": "18:30" }],
+        "jeudi": [{ "ouverture": "10:00", "fermeture": "20:00" }],
+        "vendredi": [{ "ouverture": "10:00", "fermeture": "18:30" }],
+        "samedi": [{ "ouverture": "09:00", "fermeture": "17:00" }],
+        "dimanche": []
+      }
+    }
+  },
+  {
+    "id": 2,
+    "marque": "Alpa",
+    "modele": "Court Classic",
+    "prix": 95.00,
+    "enStock": true,
+    "pointures": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+    "magasin": {
+      "nom": "Lêkê Plainpalais",
+      "adresse": "Rue de Carouge 12",
+      "ville": "Genève",
+      "coordonnees": { "lat": 46.1960, "lng": 6.1420 },
+      "horaires": {
+        "lundi": [{ "ouverture": "13:30", "fermeture": "18:30" }],
+        "mardi": [{ "ouverture": "09:30", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "18:30" }],
+        "mercredi": [{ "ouverture": "09:30", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "18:30" }],
+        "jeudi": [{ "ouverture": "09:30", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "19:00" }],
+        "vendredi": [{ "ouverture": "09:30", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "18:30" }],
+        "samedi": [{ "ouverture": "09:00", "fermeture": "17:00" }],
+        "dimanche": []
+      }
+    }
+  },
+  {
+    "id": 4,
+    "marque": "Kova",
+    "modele": "Trail Jura",
+    "prix": 139.00,
+    "enStock": true,
+    "pointures": [39, 40, 41, 42, 43, 44, 45],
+    "magasin": {
+      "nom": "Lêkê Yverdon",
+      "adresse": "Rue du Lac 30",
+      "ville": "Yverdon-les-Bains",
+      "coordonnees": { "lat": 46.7785, "lng": 6.6410 },
+      "horaires": {
+        "lundi": [],
+        "mardi": [{ "ouverture": "09:00", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "18:30" }],
+        "mercredi": [{ "ouverture": "09:00", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "18:30" }],
+        "jeudi": [{ "ouverture": "09:00", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "18:30" }],
+        "vendredi": [{ "ouverture": "09:00", "fermeture": "12:00" }, { "ouverture": "13:30", "fermeture": "18:30" }],
+        "samedi": [{ "ouverture": "09:00", "fermeture": "16:00" }],
+        "dimanche": []
+      }
+    }
+  }
+]
