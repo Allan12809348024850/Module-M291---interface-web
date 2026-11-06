@@ -66,7 +66,7 @@ Ouvre ensuite le dossier dans VS Code. Il n’y a rien à installer : le site se
 
 | Date | Outil | Prompt (résumé) | Ce que j’ai corrigé à la main |
 |---|---|---|---|
-| 30.10.2026 | Claude | « Voici mon brief et mon wireframe : génère 3 directions artistiques (éditoriale, chaleureuse, moderne) en HTML5 sémantique et CSS avec variables, sans framework. » | _à compléter_ |
-| 30.10.2026 | Claude | « Calcule les ratios de contraste WCAG de ma palette et dis-moi quelles combinaisons sont interdites. » | _à compléter_ |
-| 30.10.2026 | Claude | « Intègre l’écran d’accueil de la piste C en mobile first avec une media query à 768 px. » | _à compléter_ |
-| 06.11.2026 | Claude | « Crée data.json avec au moins 30 sneakers typées, puis le schéma de validation et l’échantillon avec GPS et horaires des ateliers avancés. » | _à compléter_ |
+| 30.10.2026 | Claude | « Voici mon brief et mon wireframe : génère 3 directions artistiques (éditoriale, chaleureuse, moderne) en HTML5 sémantique et CSS avec variables, sans framework. » | J’ai choisi la piste moderne : le site vise les jeunes, il doit être facile à comprendre et à naviguer, dans l’esprit des sites de sneakers qui m’ont inspiré. |
+| 30.10.2026 | Claude | « Calcule les ratios de contraste WCAG de ma palette et dis-moi quelles combinaisons sont interdites. » | Validé : l’orange sert seulement de fond aux boutons, jamais de couleur de texte. J’ai gardé l’orange et le beige, qui sont aussi les couleurs de mon e-portfolio. |
+| 30.10.2026 | Claude | « Intègre l’écran d’accueil de la piste C en mobile first avec une media query à 768 px. » | Validé comme base. Changements que je veux faire : un menu de navigation par couleur et par style, une fiche détail au clic sur une paire (description et choix de la pointure), et une intro qui explique pourquoi choisir Lêkê Sneakers. |
+| 06.11.2026 | Claude | « Crée data.json avec au moins 30 sneakers typées, puis le schéma de validation et l’échantillon avec GPS et horaires des ateliers avancés. » | Pas encore de correction : les paires ne sont pas encore affichées sur le site. Je les relirai quand elles seront affichées avec leurs images. |
